@@ -1,4 +1,6 @@
-﻿namespace TCP_Protocol
+﻿using RestSharp;
+
+namespace TCP_Protocol
 {
     internal class Program
     {

@@ -51,7 +51,7 @@ namespace NP___Intro
 
                 int bytes = 0;
                 data = new byte[1024];
-                bytes = socket.ReceiveFrom(data, ref rep);
+                //bytes = socket.ReceiveFrom(data, ref rep);
 
             }
             catch (Exception ex)

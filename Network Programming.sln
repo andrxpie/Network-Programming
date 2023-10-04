@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP - Intro", "NP - Intro\NP - Intro.csproj", "{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP Protocol", "TCP Protocol\TCP Protocol.csproj", "{DBF6B96E-A03B-4928-81C7-3613EF38E081}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "http", "http\http.csproj", "{280B77CD-239F-41E3-BF98-EBC48D5353DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280B77CD-239F-41E3-BF98-EBC48D5353DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280B77CD-239F-41E3-BF98-EBC48D5353DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280B77CD-239F-41E3-BF98-EBC48D5353DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280B77CD-239F-41E3-BF98-EBC48D5353DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

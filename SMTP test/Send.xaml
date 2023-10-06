@@ -26,6 +26,8 @@
             <TextBox x:Name="subject" Margin="10 0 0 0"/>
         </DockPanel>
 
+        <TextBlock DockPanel.Dock="Bottom" Text="Attachments"/>
+
         <DockPanel DockPanel.Dock="Bottom" Margin="10 0 10 0" LastChildFill="False">
             <Button DockPanel.Dock="Left" Content="Add attachment" FontSize="20" Click="AddAttachmentButton"/>
             <Button DockPanel.Dock="Right" Content="Send" Click="SendButton" FontSize="20"/>

@@ -1,5 +1,4 @@
-﻿using MailKit.Net.Imap;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,22 +16,13 @@ using System.Windows.Shapes;
 namespace IMAP
 {
     /// <summary>
-    /// Interaction logic for Authorize.xaml
+    /// Interaction logic for Mail.xaml
     /// </summary>
-
-    public partial class Authorize : Page
+    public partial class Mail : Page
     {
-        public Authorize()
+        public Mail()
         {
             InitializeComponent();
-        }
-
-        private void SubmittButton(object sender, RoutedEventArgs e)
-        {
-            using(var client = new ImapClient())
-            {
-                client.Connect();
-            }
         }
     }
 }

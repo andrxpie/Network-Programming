@@ -8,7 +8,26 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Authorize">
 
-    <DockPanel Margin="10">
-        <TextBlock DockPanel.Dock="Top" Text="Authorize" FontSize="18" HorizontalAlignment="Center"/>
-    </DockPanel>
+    <StackPanel>
+        <TextBlock Text="Authorize" HorizontalAlignment="Center" FontSize="30"/>
+
+        <TextBlock Text="Email" HorizontalAlignment="Center" FontSize="20" Margin="0 40 0 0"/>
+        <DockPanel LastChildFill="False" HorizontalAlignment="Center">
+            <TextBox DockPanel.Dock="Left" x:Name="email" Width="200" Margin="0 5 0 0" HorizontalContentAlignment="Center"/>
+            <ComboBox DockPanel.Dock="Left" Name="cbox">
+                <ComboBoxItem Content="gmail.com" IsSelected="True"/>
+                <ComboBoxItem Content="microsoft.com"/>
+                <ComboBoxItem Content="outlook.com"/>
+                <ComboBoxItem Content="yahoo.com"/>
+                <ComboBoxItem Content="yandex.ru"/>
+                <ComboBoxItem Content="mail.ru"/>
+            </ComboBox>
+        </DockPanel>
+        
+
+        <TextBlock Text="Password" HorizontalAlignment="Center" FontSize="20" Margin="0 5 0 0"/>
+        <PasswordBox x:Name="password" Width="200" Margin="0 5" HorizontalContentAlignment="Center"/>
+
+        <Button Content="Submit" Width="200" Click="SubmittButton"/>
+    </StackPanel>
 </Page>

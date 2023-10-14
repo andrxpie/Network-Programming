@@ -19,11 +19,12 @@ namespace NP___Intro
 {
     public partial class MainWindow : Window
     {
-        IPAddress ip { get; set; } = IPAddress.Parse("127.0.0.1");
-        int port { get; set; } = 8080;
-        IPEndPoint iep { get; set; } // ip end point
-        EndPoint rep { get; set; } // remouted end point
-        Socket socket { get; set; }
+        IPAddress ip;
+        int port;
+
+        IPEndPoint iep;
+        IPEndPoint rip = null;
+        UdpClient client = new();
 
         public MainWindow()
         {
@@ -34,25 +35,17 @@ namespace NP___Intro
         {
             try
             {
-                // sending
                 ip = IPAddress.Parse(ipTbx.Text);
+                port = int.Parse(portTbx.Text);
                 iep = new IPEndPoint(ip, port);
-                rep = new IPEndPoint(IPAddress.Any, 0);
-                socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
-                byte[] data = Encoding.UTF8.GetBytes(messageTbx.Text);
+                byte[] data = Encoding.Unicode.GetBytes(messageTbx.Text);
+                client.Send(data, data.Length, iep);
 
-                socket.SendTo(data, iep);
-                socket.Shutdown(SocketShutdown.Both);
-                socket.Close();
+                data = client.Receive(ref rip);
+                string response = Encoding.Unicode.GetString(data);
 
-                // recieving
-                socket.Bind(iep);
-
-                int bytes = 0;
-                data = new byte[1024];
-                bytes = socket.ReceiveFrom(data, ref rep);
-
+                history.Items.Add(response);
             }
             catch (Exception ex)
             {

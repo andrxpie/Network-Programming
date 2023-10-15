@@ -18,5 +18,22 @@ namespace Car_license_plate__CLP__DB
         public bool IsWanted { get; set; }
         public int DriveId { get; set; }
         public Drive Drive { get; set; }
+
+        public override string ToString()
+        {
+            string message = $"DB Id: {Id}\n";
+
+            message += $"Brand: {Brand.Name}\n";
+            message += $"Model: {Model}\n";
+            message += $"Color: {Color.Name}\n";
+            message += $"LP: {LicensePlate}\n";
+            message += $"Year: {Year}\n";
+            message += $"Mileage: {Mileage} km\n";
+            message += $"Owner: {Owner}\n";
+            message += $"Is wanted: {IsWanted}\n";
+            message += $"Drive: {Drive.Name}";
+
+            return message;
+        }
     }
 }

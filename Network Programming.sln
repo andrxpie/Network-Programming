@@ -3,11 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NP - Intro", "NP - Intro\NP - Intro.csproj", "{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP server", "TCP Protocol\TCP server.csproj", "{DBF6B96E-A03B-4928-81C7-3613EF38E081}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63A18FD7-C8B6-421B-A16C-558CE292AC29} = {63A18FD7-C8B6-421B-A16C-558CE292AC29}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP Protocol", "TCP Protocol\TCP Protocol.csproj", "{DBF6B96E-A03B-4928-81C7-3613EF38E081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Car license plate (CLP) DB", "Car license plate (CLP) DB\Car license plate (CLP) DB.csproj", "{63A18FD7-C8B6-421B-A16C-558CE292AC29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car license plate (CLP) DB", "Car license plate (CLP) DB\Car license plate (CLP) DB.csproj", "{63A18FD7-C8B6-421B-A16C-558CE292AC29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP client", "TCP client\TCP client.csproj", "{46F31B1C-9A9E-403F-8B35-91B3774A6FD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +18,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD8EE3D2-6B81-4013-B1DC-AA29EA347833}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBF6B96E-A03B-4928-81C7-3613EF38E081}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +26,10 @@ Global
 		{63A18FD7-C8B6-421B-A16C-558CE292AC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63A18FD7-C8B6-421B-A16C-558CE292AC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63A18FD7-C8B6-421B-A16C-558CE292AC29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F31B1C-9A9E-403F-8B35-91B3774A6FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F31B1C-9A9E-403F-8B35-91B3774A6FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F31B1C-9A9E-403F-8B35-91B3774A6FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F31B1C-9A9E-403F-8B35-91B3774A6FD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

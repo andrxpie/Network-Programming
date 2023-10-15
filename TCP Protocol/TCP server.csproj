@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <ProjectReference Include="..\Car license plate (CLP) DB\Car license plate (CLP) DB.csproj" />
   </ItemGroup>
 
 </Project>

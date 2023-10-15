@@ -26,9 +26,11 @@
             <TextBox x:Name="subject" Margin="10 0 0 0"/>
         </DockPanel>
 
+        <ListView DockPanel.Dock="Bottom" x:Name="attachmentsLBX" Margin="0 5 0 0" MouseDoubleClick="RemoveAttachmentDClick"/>
         <TextBlock DockPanel.Dock="Bottom" Text="Attachments"/>
 
         <DockPanel DockPanel.Dock="Bottom" Margin="10 0 10 0" LastChildFill="False">
+
             <Button DockPanel.Dock="Left" Content="Add attachment" FontSize="20" Click="AddAttachmentButton"/>
             <Button DockPanel.Dock="Right" Content="Send" Click="SendButton" FontSize="20"/>
 
@@ -41,6 +43,6 @@
             <TextBlock DockPanel.Dock="Right" Text="Priority:" VerticalAlignment="Center" FontSize="15"/>
         </DockPanel>
 
-        <TextBox x:Name="tbx" Height="280" Margin="0 10"/>
+        <TextBox x:Name="tbx" Height="180" Margin="0 10"/>
     </DockPanel>
 </Page>

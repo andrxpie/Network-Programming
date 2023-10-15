@@ -29,6 +29,7 @@ namespace SMTP_test
         string password;
         MimeMessage message = new();
         BodyBuilder body = new();
+        List<string> attachmentsLocations = new List<string>();
 
         public Send(string email, string password)
         {
@@ -64,6 +65,23 @@ namespace SMTP_test
             ofd.ShowDialog();
 
             body.Attachments.Add(ofd.FileName);
+
+            attachmentsLocations = new();
+            foreach (var attachment in body.Attachments)
+                attachmentsLocations.Add(attachment.ContentDisposition.FileName);
+
+            attachmentsLBX.ItemsSource = attachmentsLocations;
+        }
+
+        private void RemoveAttachmentDClick(object sender, MouseButtonEventArgs e)
+        {
+            body.Attachments.RemoveAt(attachmentsLBX.SelectedIndex);
+
+            attachmentsLocations = new();
+            foreach (var attachment in body.Attachments)
+                attachmentsLocations.Add(attachment.ContentDisposition.FileName);
+
+            attachmentsLBX.ItemsSource = attachmentsLocations;
         }
     }
 }

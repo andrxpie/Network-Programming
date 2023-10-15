@@ -16,7 +16,7 @@ namespace TCP_server
             IPEndPoint ipPoint = new IPEndPoint(iPAddress, port);
 
             TcpListener listener = new TcpListener(ipPoint);
-            
+
             try
             {
                 listener.Start(10);

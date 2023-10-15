@@ -21,19 +21,16 @@ namespace Car_license_plate__CLP__DB
 
         public override string ToString()
         {
-            string message = $"DB Id: {Id}\n";
-
-            message += $"Brand: {Brand.Name}\n";
-            message += $"Model: {Model}\n";
-            message += $"Color: {Color.Name}\n";
-            message += $"LP: {LicensePlate}\n";
-            message += $"Year: {Year}\n";
-            message += $"Mileage: {Mileage} km\n";
-            message += $"Owner: {Owner}\n";
-            message += $"Is wanted: {IsWanted}\n";
-            message += $"Drive: {Drive.Name}";
-
-            return message;
+            return @$"DB Id: {Id}
+Brand: {Brand.Name}
+Model: {Model}
+Color: {Color.Name}
+LP: {LicensePlate}
+Year: {Year}
+Mileage: {Mileage} km
+Owner: {Owner}
+Is wanted: {IsWanted}
+Drive: {Drive.Name}";
         }
     }
 }
